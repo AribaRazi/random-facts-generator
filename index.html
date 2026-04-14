@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API GAME</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="icon" href="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f602.png">
+</head>
+<body>
+    <div class="heading">Mood-Based Meme Generator
+
+    </div>
+    <div class="options">
+    <div class="first" onclick="getFact()">happy &#128512;</div>
+    <div class="second" onclick="getFact()">sad &#128532;</div>
+    <div class="third" onclick="getFact()">angry &#128545;</div>
+    <div class="fourth" onclick="getFact()">anxious &#128543</div>
+    </div>
+<!-- <button onclick="getFact()">Give useless fact 🤯</button> -->
+<p id="fact"></p>
+
+<script>
+async function getFact() {
+  const res = await fetch("https://uselessfacts.jsph.pl/api/v2/facts/random");
+  const data = await res.json();
+
+  document.getElementById("fact").innerText = data.text;
+}
+</script>
+    <script src="script.js"></script>
+</body>
+</html>

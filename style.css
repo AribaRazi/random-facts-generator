@@ -1,0 +1,80 @@
+.first{
+    height: 200px;
+    width:200px;
+    background-color: rgb(92, 230, 177);
+    justify-content: center;
+    font-size: 35px;
+}
+.second{
+    height: 200px;
+    width:200px;
+    background-color: rgb(154, 152, 139);
+    font-size: 35px;
+}
+.third{
+    height: 200px;
+    width:200px;
+font-size: 35px;  
+    background-color: rgb(214, 145, 180);
+}
+.fourth{
+    height: 200px;
+    width:200px;
+    font-size: 35px;
+    background-color: rgb(223, 231, 182);
+}
+button{
+    background-color: rgb(56, 120, 173);
+    height: 30px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 26px;
+    color: antiquewhite;
+}
+.heading{
+    font-size: 30px;
+    color: white;
+    height: 40px;
+    text-align: center;
+    background-color: rgb(196, 83, 107);
+}
+body{
+ 
+    background-image: url('bunny.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; /* Centers the image */
+    margin: 0; /* Removes default white space around edges */
+}
+.options{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 100px;
+    gap: 20px;
+}
+
+.first:hover{
+    border: 4px black solid;
+}
+.second:hover{
+    border: 4px black solid;
+}
+.third:hover{
+    border: 4px black solid;
+}
+.fourth:hover{
+    border: 4px black solid;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+p{
+    background-color: rgb(239, 175, 194);
+    font-size: 29px;
+    font-style: bold;
+}
